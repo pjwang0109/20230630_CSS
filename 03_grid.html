@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03 Grid</title>
+    <style>
+      .grid.box.aa {
+        border: 1px solid #bbb;
+        /* width: 600px;
+        height: 600px; */
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+
+        grid-template-areas:
+          "A A A "
+          "B B C"
+          "B B C";
+      }
+      .item {
+        /* width: 50px;
+        height: 50px; */
+        background-color: #f00;
+      }
+      .item:nth-child(1) {
+        grid-area: A;
+        background-color: #ff0;
+      }
+      .item:nth-child(2) {
+        grid-area: B;
+        background-color: #00f;
+      }
+      .item:nth-child(3) {
+        grid-area: C;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid box aa">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>

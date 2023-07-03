@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02 Grid</title>
+    <style>
+      .grid {
+        width: 700px;
+        margin: auto;
+        /* background-color: #fa0; */
+
+        display: grid;
+        gap: 10px 20px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .item {
+        border: 2px solid rgb(161, 161, 161);
+      }
+      .item h3{
+        text-align: center;
+      }
+      .item img {
+        width: 100%;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=10" />
+        <h3>TITLE</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          voluptas nemo cumque, rerum quia eum.
+        </p>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=10" />
+        <h3>TITLE</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          voluptas nemo cumque, rerum quia eum.
+        </p>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=10" />
+        <h3>TITLE</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          voluptas nemo cumque, rerum quia eum.
+        </p>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=10" />
+        <h3>TITLE</h3>
+        <p>
+          Lorem ipsum dolor uia eum.
+        </p>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=10" />
+        <h3>TITLE</h3>
+        <p>
+          Lorem ipsum dolorerum quia eum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

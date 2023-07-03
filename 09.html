@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09 自訂屬性</title>
+    <style>
+        :root{
+            --mySize:200px;
+        }
+        .box{
+            /* 自訂屬性 */
+            --mySize:300px;
+            width: var(--mySize);
+            height: var(--mySize);
+            background-color: #fa0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
